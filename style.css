@@ -1,0 +1,51 @@
+@media screen and (max-width: 389px) {
+    img {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 390px) {
+    img {
+        float: left;
+        padding: 0 20px 10px 0;
+        width: 200px;
+    }
+}
+body {
+    font-size: 18px;
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Georgia, Serif;
+}
+h2 {
+    font-size: 22px;
+}
+.site {
+    width: 94%;
+    min-height: 160px;
+    max-height: max-content;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 3%;
+    margin-top: 20px;
+    display: inline-block;
+    color: #eadcee;
+}
+button {
+    float: right;
+    cursor: pointer;
+    background-color: #3f324e;
+    height: 30px;
+    width: 100px;
+    border: 1px solid black;
+    color: rgb(234, 255, 255);
+    font-weight: bold;
+    margin-top: 10px;
+}
+footer {
+    color: #eadcee;
+    margin-top: 80px;
+}
+a {
+    text-decoration: none;
+    color:#eadcee;
+}
