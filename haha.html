@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="rus">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+  <script>
+    var flag = 1;
+    function no() {
+        if (flag == 1) N.style.left = "250px";
+        if (flag == 2) N.style.left = "100px";
+        if (flag == 3) N.style.left = "200px";
+        flag = flag + 1;
+        if (flag == 4) flag = 1;
+    }
+    function yes() {
+        alert("Молодец, что признал это!")
+    }
+    </script>
+    <style>
+        a {
+            position: relative;
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+            top: 5px;
+        }
+        .main {
+            border: 1px solid black;
+            width: 400px;
+            height: 200px;
+            background-color: antiquewhite;
+            border-radius: 10px;
+            position: absolute;
+            margin-top: 15%;
+            margin-left: 35%;
+        }
+        p {
+            font-size: 30px;
+            padding-left: 20px;
+        }
+        .b {
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 10px;
+            width: 80px;
+            height: 30px;
+            position: relative;
+        }
+        .total {
+            margin-left: 20px;
+        }
+        .Y {
+            margin-left: 30px;
+        }
+        .N {
+            margin-left: 25px;
+        }
+        #N {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <p id="#question">Ты пидор?</p>
+        <div class="total">
+            <div class="b" id="#Y">
+                <a href="#NULL" class="Y" onclick="yes()">Да</a>
+            </div>
+            <div class="b" id="N">
+                <a href="#NULL" class="N" onmouseover="no()">Нет</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
